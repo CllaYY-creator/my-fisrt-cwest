@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2etap_cwest</title>
+        <link rel="stylesheet" href="./cwest.css">
+        <style>
+            /* Простые стили для формы */
+            .form-container {
+                margin: 50px;
+            }
+            .error-message {
+                color: red;
+            }
+        </style>
+    </head>
+    <body background="background2.jpg">
+        <div  class="form-container">
+            <h1 class="ii">Введите правильное название фильма (маленькие буквы)
+
+            </h1>
+            <form id="searchForm">
+                <input type="text" id="answer" placeholder="Введите ответ" required>
+                <button type="submit">Поиск</button>
+                <p class="error-message" id="error-message"></p>
+            </form>
+        </div>
+    
+        <script>
+            // Правильный ответ
+            const correctAnswer = "код да винчи";
+    
+            // Получение элементов
+            const form = document.getElementById('searchForm');
+            const answerInput = document.getElementById('answer');
+            const errorMessage = document.getElementById('error-message');
+    
+            // Обработка отправки формы
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Предотвращаем отправку формы
+    
+                // Получение введенного значения
+                const userAnswer = answerInput.value.trim();
+    
+                // Проверка правильности ответа
+                if (userAnswer === correctAnswer) {
+                    // Переход на следующую страницу
+                   
+                    
+                    window.open ('https://gitlab.com/rats7183236/cwest', '_blank');
+
+    
+                } else {
+                    // Показ сообщения об ошибке
+                    errorMessage.textContent = 'Неправильный ответ. Пожалуйста, попробуйте еще раз.';
+                }
+            });
+        </script>
+    </body>
+   
+    <style>
+        .thumbnail1 {
+            width: 150px; /* Устанавливаем ширину миниатюры */
+            height: auto; /* Высота будет пропорциональна ширине */
+            border: 2px solid #ccc; /* Добавляем границу */
+            border-radius: 8px; /* Округляем углы */
+            margin: 10px; /* Отступы вокруг миниатюры */
+            transition: transform 0.3s ease; /* Переход для эффекта увеличения */
+            position: absolute;
+    top: 32%; /* или любое значение, чтобы изменить вертикальное положение */
+    left: 29%; /* или любое значение, чтобы изменить горизонтальное положение */
+    transform: translate(-50%, -50);
+        }
+        .thumbnail1:hover {
+            transform: scale(1.1); /* Увеличиваем изображение при наведении */
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="criptex.jpg" alt="Изображение 1" class="thumbnail1">
+    <img src="masa.jpg" alt="Изображение 2" class="thumbnail2">
+    <img src="mona-lisa.jpg" alt="Изображение 3" class="thumbnail3">
+</body>
+
+
+    </html>
+    
+    
+
+
+
+
+
+
+
+
+
+
