@@ -1,0 +1,83 @@
+.haha {
+    width: 1350px;
+    height: 650px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 32%; /* или любое значение, чтобы изменить вертикальное положение */
+    left: 50%; /* или любое значение, чтобы изменить горизонтальное положение */
+    transform: translate(-50%, -50);/* чтобы центрировать текст */
+    color: white; /* Цвет текста */
+    font-size: 10px; /* Размер шрифта */
+   
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.top{
+    font-size: 20px;
+}
+
+.pp{
+    font-size: 10px;
+}
+
+.form-container{
+    position: absolute;
+    top: 35%; /* или любое значение, чтобы изменить вертикальное положение */
+    left: 50%; /* или любое значение, чтобы изменить горизонтальное положение */
+    transform: translate(-60%, -5%); /* чтобы центрировать текст */
+    color: white; 
+}
+
+.thumbnail2{
+    width: 150px; /* Устанавливаем ширину миниатюры */
+    height: 90; /* Высота будет пропорциональна ширине */
+    border: 2px solid #ccc; /* Добавляем границу */
+    border-radius: 8px; /* Округляем углы */
+    margin: 10px; /* Отступы вокруг миниатюры */
+    transition: transform 0.3s ease; /* Переход для эффекта увеличения */
+    position: absolute;
+top: 32%; /* или любое значение, чтобы изменить вертикальное положение */
+left: 42%; /* или любое значение, чтобы изменить горизонтальное положение */
+transform: translate(-50%, -50);
+
+}
+
+.thumbnail3{
+    width: 150px; /* Устанавливаем ширину миниатюры */
+    height: 115px; /* Высота будет пропорциональна ширине */
+    border: 2px solid #ccc; /* Добавляем границу */
+    border-radius: 8px; /* Округляем углы */
+    margin: 10px; /* Отступы вокруг миниатюры */
+    transition: transform 0.3s ease; /* Переход для эффекта увеличения */
+    position: absolute;
+top: 32%; /* или любое значение, чтобы изменить вертикальное положение */
+left: 55%; /* или любое значение, чтобы изменить горизонтальное положение */
+transform: translate(-50%, -50);
+
+}
+.thumbnail2:hover{
+    transform: scale(1.1);
+}
+
+.thumbnail3:hover{
+    transform: scale(1.1);
+}
+
+.ii{
+    transform: translate(-5%, 190%);
+    height: 70px;
+}
+
+
+
+
+
+
